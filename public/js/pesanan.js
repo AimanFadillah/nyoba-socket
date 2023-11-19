@@ -20,9 +20,9 @@ function createData (data) {
         <div class="card">
             <div class="card-body">
                 <div class="d-flex justify-content-between ">
-                    <h5 class="card-title">${XSS(data.nama)}</h5>
+                    <h4 class="card-title">${XSS(data.nama)}</h4>
                     <div>
-                        <button class="badge bg-danger buttonHapus" data-id="${data.id}" >X</button>
+                        <button class="badge bg-danger buttonHapus border-0" data-id="${data.id}" ><i data-id="${data.id}" class="buttonHapus bi bi-trash3"></i></button>
                     </div>
                 </div>
                 <p class="card-text">${XSS(data.pesan)}</p>
