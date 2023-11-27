@@ -17,7 +17,7 @@ socket.on("hapusPesanan",destroyData);
 function createData (data) {
     container.innerHTML += `
     <div class="col-md-4 mb-2" id="pesan${data.id}">
-        <div class="card">
+        <div class="card shadow">
             <div class="card-body">
                 <div class="d-flex justify-content-between ">
                     <h4 class="card-title">${XSS(data.nama)}</h4>
