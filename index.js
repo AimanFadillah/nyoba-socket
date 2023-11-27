@@ -19,6 +19,10 @@ io.on('connection', (socket) => {
         Pesan.destroy({where:{id}});
         io.emit("hapusPesanan",id);
     })
+    socket.on("editPesanan",(data,id) => {
+        Pesan.update(data,{where:{id:id}});
+        io.emit("editPesanan",data,id);
+    })
 });
 
 server.listen(5000,() => console.log("http://localhost:5000")) 
